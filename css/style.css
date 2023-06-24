@@ -75,6 +75,10 @@ table {
     margin-bottom: 1em;
 }
 
+main .mainContainer table{
+    width: 98%;
+}
+
 th,
 td {
     padding: 8px;

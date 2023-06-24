@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mémo</title>
+    <link rel="stylesheet" href="css/memo.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="cours.html">Cours</a>
+      <a href="tp.html">TPs</a>
+      <a href="shortcuts.html">Raccourcis</a>
+      <a href="memo.html">Memo</a>
+    </nav>
+    <main>
+      <h2>Mémo Vocabulaire</h2>
+      <div class="warpper">
+        <input class="radio" id="one" name="group" type="radio" checked />
+        <input class="radio" id="two" name="group" type="radio" />
+        <input class="radio" id="three" name="group" type="radio" />
+        <div class="tabs">
+          <label class="tab" id="one-tab" for="one">HTML</label>
+          <label class="tab" id="two-tab" for="two">CSS</label>
+          <label class="tab" id="three-tab" for="three">Javascript</label>
+        </div>
+        <div class="panels">
+          <div class="panel" id="one-panel">
+            <div class="panel-title">HTML Vocabulaire</div>
+            <ul>
+              <li>
+                <b>Element</b> : Définit un objet en HTML
+                <ul>
+                  <li>
+                    Exemple: paragraphe(p), titre(h1, h2,...), hyperlien (a),
+                    mais aussi html, body, div, span,...
+                  </li>
+                </ul>
+              </li>
+              <br />
+              <li>
+                <b>Balise</b> : Un élément est représenté dans une fichier HTML
+                par une <strong>balise</strong>
+                <ul>
+                  <li><strong>Tag</strong> en anglais</li>
+                  <li>Toujours en minuscule</li>
+                  <li>balise ouvrante et balise fermante</li>
+                  <li>
+                    Il existe des élément qui n'ont pas besoin de balise
+                    fermante (br, img,...), ce sont des balises
+                    <strong>orphelines</strong>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>Contenu</b> : Le contenu d'un élément HTML
+                <ul>
+                  <li>Situé entre la balise ouvrante et la fermante</li>
+                  <li>
+                    Dans un fichier HTML on ne doit pas trouver du contenu
+                    non-balisé
+                  </li>
+                  <li>
+                    Le contenu est la partie qui sera visible par l'utilisateur
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <p class="underline">Exemple d'un élément paragraphe:</p>
+            <img
+              src="https://www.pierre-giraud.com/wp-content/uploads/2019/05/element-p-exemple-html.png"
+              alt="un élément HTML"
+            />
+            <p class="underline">Exemple d'une balise orpheline:</p>
+            <img
+              src="https://www.pierre-giraud.com/wp-content/uploads/2019/05/element-br-exemple-html.png"
+              alt="une balise orpheline HTML"
+            />
+            <ul>
+              <li>
+                <b>Attribut</b> : Permet d'ajouter des paramètres à nos éléments
+                <ul>
+                  <li>
+                    Exemple: paragraphe(p), titre(h1, h2,...), hyperlien (a),
+                    mais aussi html, body, div, span,...
+                  </li>
+                  <li>Toujours en minuscule</li>
+                  <li>Un élément peut avoir plusieurs attributs</li>
+                  <li>
+                    Un attribut va souvent avoir une <strong>valeur</strong>
+                  </li>
+                </ul>
+              </li>
+              <br />
+            </ul>
+            <p class="underline">Exemple d'un attribut:</p>
+            <img
+              src="https://www.pierre-giraud.com/wp-content/uploads/2019/05/element-a-attribut-href-html.png"
+              alt=""
+            />
+            <p class="underline">Exemple d'un élément à plusieurs attributs:</p>
+            <img
+              src="https://www.pierre-giraud.com/wp-content/uploads/2019/05/element-img-attribut-src-alt-html.png"
+              alt=""
+            />
+          </div>
+          <div class="panel" id="two-panel">
+            <div class="panel-title">CSS Vocabulaire</div>
+            <ul>
+              <li>
+                <b>Règle de style</b> : Ensemble des règles de style appliqué
+                sur un sélecteur
+                <ul>
+                  <li><a href="#rule">Voir exemple</a></li>
+                  <li>
+                    Une règle de style, peut contenir plusieurs
+                    <strong>déclarations</strong> (voir img)
+                  </li>
+                </ul>
+              </li>
+              <br />
+              <li>
+                <b>Sélecteurs</b> : Détermine le(s) élement(s) sur le(s)quel(s)
+                on applique les styles
+                <ul>
+                  <li>Un sélecteur peut prendre plusieurs formes :</li>
+                  <li>Nom de <strong>balise</strong> : h1, p, body,...</li>
+                  <li>
+                    Nom d'une <strong>classe</strong> : .maClasse (utilisation
+                    du point)
+                  </li>
+                  <li>
+                    Nom d'un <strong>id</strong> : #monId (utilisation du #)
+                  </li>
+                  <li>
+                    Sélecteurs avancés :
+                    <a href="https://www.w3schools.com/cssref/css_selectors.php"
+                      >Liste W3C</a
+                    >, <a href="#selectors">Mémo</a>
+                  </li>
+                </ul>
+              </li>
+              <br />
+              <li>
+                <b>Propriété</b> : Utilisé pour modifier le style d'un aspect
+                particulier d'un élément
+                <ul>
+                  <li>
+                    Il existe un tas de propriétés CSS : color, font-size,
+                    width, display,...
+                  </li>
+                  <li>
+                    Une propriété CSS aura <strong>toujours</strong> une valeur: une couleur, une taille, un mot clé,...
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <p id="rule" class="underline">Exemple d'une règle de style CSS:</p>
+            <img
+              src="https://lucidar.me/fr/web-dev-class/files/fr-internal-css-syntax.png"
+              alt=""
+            /><br />
+            <p id="selectors" class="underline">Memo sur les sélecteurs CSS:</p>
+            <img src="https://pbs.twimg.com/media/EdTVA1CWAAAvVIu.jpg" alt="" />
+          </div>
+          <div class="panel" id="three-panel">
+            <div class="panel-title">A venir...</div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
